@@ -13,6 +13,10 @@ buildscript {
 
 apply plugin: 'kotlin'
 
+compileKotlin {
+    kotlinOptions.jvmTarget= "1.8"
+}
+
 repositories {
     mavenLocal()
     maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
@@ -22,6 +26,7 @@ repositories {
 
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    compile 'no.tornado:tornadofx:1.7.16'
     compile "org.apache.commons:commons-lang3:3.7"
     compile "commons-io:commons-io:2.6"
     testCompile "junit:junit:4.11"

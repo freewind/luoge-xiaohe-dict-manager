@@ -166,3 +166,10 @@ class HelloWorldApp : App(HelloWorld::class, HelloWorldStyle::class)
 fun main(args: Array<String>) {
     launch<HelloWorldApp>()
 }
+
+object DictManager {
+    @JvmStatic
+    fun main(args: Array<String>) {
+        launch<HelloWorldApp>()
+    }
+}

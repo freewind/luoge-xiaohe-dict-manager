@@ -12,6 +12,8 @@ buildscript {
 }
 
 apply plugin: 'kotlin'
+apply plugin: 'application'
+mainClassName = 'example.DictManager'
 
 compileKotlin {
     kotlinOptions.jvmTarget= "1.8"
